@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int row_memb(int number)
+{
+    if(number==1)return 2;
+    return 2+row_memb(number-1);
+}
+int main()
+{
+    int n;
+    cout<<"Enter the number of the row member you are interested in: "; cin>>n;
+    cout<<"Result: "<<row_memb(n);
+    return 0;
+}
